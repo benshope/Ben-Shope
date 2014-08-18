@@ -228,8 +228,7 @@ width: 100%;
                         section#features
 **************************************************************/
 .features {
-  background: rgb(255, 135, 89);
-  border-top: 1px solid rgba(255, 255, 255, 0.54);
+  background: darkgray;
   color: #fff;
   padding: 20px 0;
 }
