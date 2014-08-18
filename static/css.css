@@ -56,8 +56,8 @@ a.carousel-control:hover {
   min-height: 20px;
   padding: 20px 0;
 }
- 
- 
+
+
 /*************************************************************
                              header
 **************************************************************/
@@ -93,8 +93,8 @@ width: 100%;
   transition: all .2s linear;
   color: white;
   font-size:14px;
-  padding: 10px 0px 12px 0px; 
-  position:fixed !important; 
+  padding: 10px 0px 12px 0px;
+  position:fixed !important;
   background: rgba(0, 0, 0, 0);
 }
 .site-title {
@@ -167,7 +167,7 @@ width: 100%;
   margin: 250px 0 140px;
   text-align: center;
 }
-.header-description h2 {  
+.header-description h2 {
   font-weight: 100;
   font-size: 93px;
   color: rgb(255, 255, 255);
@@ -187,7 +187,7 @@ width: 100%;
   border: 2px solid rgb(219, 82, 47);
   background: rgb(219, 82, 47);
   display: inline-block;
-  
+
   -webkit-border-radius: 9px;
   -moz-border-radius: 9px;
   border-radius: 9px;
@@ -213,7 +213,6 @@ width: 100%;
 **************************************************************/
 .slider {
   background: rgb(246, 246, 246);
-  padding: 70px 0 0px !important;
   position: relative;
   overflow: hidden;
 }
@@ -229,7 +228,7 @@ width: 100%;
                         section#features
 **************************************************************/
 .features {
-  background: rgb(255, 135, 89);  
+  background: rgb(255, 135, 89);
   border-top: 1px solid rgba(255, 255, 255, 0.54);
   color: #fff;
   padding: 20px 0;
@@ -308,7 +307,7 @@ blockquote:hover i {
   border: 5px solid rgb(244, 244, 244);
   background: #fff;
   padding: 15px;
-  
+
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -369,7 +368,7 @@ blockquote:hover i {
 
 /* social icons */
 ul.social {
-  text-align: center; 
+  text-align: center;
   padding: 20px 0 0px;
 }
 ul.social li {
@@ -381,22 +380,22 @@ ul.social li {
   background: rgb(219, 82, 47);
   margin-bottom:.5em;
   font-size: 20px;
-  
+
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  
+
   -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
   -o-transition-duration: 0.4s;
-  transition-duration: 0.4s; 
+  transition-duration: 0.4s;
 }
 ul.social li:hover {
   background: #505050;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3); 
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
 }
 /*ul.social li:hover a {
-  top: -6px; 
+  top: -6px;
 }*/
 ul.social li a {
   display: block;
@@ -407,7 +406,7 @@ ul.social li a {
   -webkit-transition: top 0.7s;
   -moz-transition: top 0.7s;
   -o-transition: top 0.7s;
-  transition: top 0.7s; 
+  transition: top 0.7s;
 }
 ul.social li a i {
   color: #fff;
@@ -444,14 +443,14 @@ ul.social li:nth-child(6):before{
 .contact-form input, .contact-form textarea {
   padding: 10px auto;
   height: 50px;
-  
+
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 9px;
   border: 2px solid #ffffff;
   -webkit-box-shadow: none;
 -moz-box-shadow: none;
-box-shadow: none; 
+box-shadow: none;
 }
 .contact-form textarea {
   height: 150px;
@@ -469,13 +468,13 @@ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z
   margin-top: 55px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAInT578zwjjgzjm5uaMYAEYB8RmROaABAD2Mw9fuRdIeAAAAABJRU5ErkJggg==) repeat;
   display: inline-block;
-  
+
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
-  
+
   border-radius: 100%;
   border-bottom-right-radius: 0%;
   border-bottom-left-radius: 0%;
@@ -508,7 +507,7 @@ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  
+
   -webkit-border-top-left-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-top-left-radius: 5px;
@@ -529,14 +528,14 @@ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z
   cursor: pointer;
   border: 2px solid rgb(219, 82, 47);
   background: rgb(219, 82, 47);
-  
+
   -webkit-border-top-right-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
   -moz-border-top-right-radius: 5px;
   -moz-border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  
+
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
@@ -570,9 +569,9 @@ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z
 **************************************************************/
 /* Large desktop */
 @media (min-width: 1200px) {  }
- 
+
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
+@media (min-width: 768px) and (max-width: 979px) {
   .header-description h2 {
     font-size: 83px;
     line-height: 58px;
@@ -585,9 +584,9 @@ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z
     padding: 0;
   }
 }
- 
+
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   body {
     padding: 0;
   }
@@ -612,7 +611,7 @@ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z
     margin: 0 0 30px 0;
     padding: 0;
   }
-  
+
   /* blockqoute */
   .about {
     padding: 44px 0 60px !important;
@@ -626,7 +625,7 @@ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z
   blockquote p {
     font-size: 18px;
   }
-  
+
   /* contact form */
   .contact-form-inner {
     padding: 18px !important;
@@ -642,6 +641,6 @@ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z
 }
 
 /* Landscape phones and down */
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
 
 }
