@@ -58,7 +58,7 @@ color: white;
 #work * { transition: all .2s linear; }
 #work div { padding-left: 0px !important; padding-right: 0px !important;}
 #work span { height: 200px; }
-#work a { 
+#work a {
   color: white !important;
 }
 #work a:hover { background: darkgray; }
@@ -69,7 +69,7 @@ color: white;
   display: inline-block;
 }
 .grid-image {
-  background: white no-repeat center top; 
+  background: white no-repeat center top;
   height: 200px;
   background-size: cover;
 }
@@ -78,14 +78,14 @@ color: white;
   height: 200px;
 }
 .grid-dark { height: 400px; }
-blockquote { 
+blockquote {
   margin-top:50px;
   text-align: center;
   color: white;
   border-left: none;
 }
-#testimonials-carousel { 
-  background: url(../img/bg.jpg) no-repeat center top;  
+#testimonials-carousel {
+  background: url(../img/bg2.jpg) no-repeat center top;
   background-size: cover;
   height: 200px;
 }
@@ -98,9 +98,9 @@ blockquote {
 #contact div {padding: none !important;}
 
 .social div { text-align: center; font-size: 30px;  }
-.social a { 
-  display: inline-block; 
-  width: 100%; 
+.social a {
+  display: inline-block;
+  width: 100%;
   height: 75px;
   line-height: 75px;
 }
@@ -119,10 +119,10 @@ border: 0;
 border-bottom: 2px solid #cacaca;
 color: #C0C0C0;
 }
-.send-button { 
-  color: white; 
-  background: #8AC007; 
-  text-align: left; 
+.send-button {
+  color: white;
+  background: #8AC007;
+  text-align: left;
   border: none;
 }
 textarea { height: auto; margin-bottom: -8px;}

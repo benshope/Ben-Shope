@@ -12,7 +12,7 @@ var map;
 $(document).ready(function() {
   // BOOTSTRAP QUOTE CAROUSEL
   $('#testimonials-carousel').carousel({ interval: false });
-  
+
   // MAP
   map = new GMaps({
     el: '#map',
