@@ -52,7 +52,7 @@ color: white;
 }
 
 /* INTRO */
-#intro { padding: 40px 0 60px 0; }
+#intro { padding: 60px 0 55px 0; }
 
 /* WORK */
 #work * { transition: all .2s linear; }
@@ -104,9 +104,9 @@ blockquote {
   height: 75px;
   line-height: 75px;
 }
-.social a:hover { background: darkgray;}
-.social i { color: #f2f2f2; }
-.social i:hover { color: white; }
+/*.social a:hover { background: darkgray;}*/
+.social a i { color: gray; }
+.social a:hover i { color: white; }
 
 input, textarea, .send-button {
 background: #f2f2f2;
