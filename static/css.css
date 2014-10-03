@@ -1,5 +1,5 @@
 
-* { font-size: 4vw; box-sizing: border-box; }
+* { font-size: 3.5vw; box-sizing: border-box; }
 
 html, body {
   margin: 0px; padding: 0px;
@@ -35,7 +35,7 @@ html, body {
 a { color: #404d5b; text-decoration: none; outline: none; }
 ul, li { list-style: none; display: inline-block; }
 h1, h2, h3 { text-transform: uppercase; }
-section { padding: 1% 5%; }
+section { padding: 1% 10%; }
 p { line-height: 1.7; }
 section a {
   position: relative;
@@ -43,8 +43,14 @@ section a {
   font-weight: 500;
 }
 
+.grid-image {
+  background: white no-repeat center top;
+  height: 30%;
+  background-size: cover;
+}
+
 /* HEADER */
-h1 { padding: 2% 5%; font-size: 6vw; margin:0px;}
+h1 { padding: 5% 10%; font-size: 6vw; margin:0px;}
 h1 span {
   display: block;
   font-size: 50%;
@@ -94,6 +100,7 @@ h1 span {
 .contact a:hover, .contact a:focus { border-color: rgba(52,73,94,0); background-color: rgba(52,73,94,0.1); }
 
 input, textarea, .send-button {
+  border-radius: 0px;
   background: #f2f2f2;
   padding: 5%;
   width: 100%;
