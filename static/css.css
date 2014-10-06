@@ -85,9 +85,9 @@ h1 span {
   background-color: #fff;
 }
 
-.link-arrow { background: rgba(149,165,166,0.4); }
-.link-arrow a { background: #fff; }
-.link-arrow a { background: #34495e url(../img/arrow_right.svg) no-repeat 50% 50%; }
+/*.link-arrow { background: rgba(149,165,166,0.4); }*/
+.link-arrow a { color: #34495e; }
+/*.link-arrow a { background: #34495e url(../img/arrow_right.svg) no-repeat 50% 50%; }*/
 
 /* SOCIAL */
 .social a i { font-size: 10vw; line-height: 2.2em; }
