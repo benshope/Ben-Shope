@@ -1,55 +1,234 @@
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Ben Shope</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <meta name="description" content="Now is better than never.  Simple is better than complex.  Readability counts.">
     <meta name="author" content="Ben Shope">
+    <link rel="shortcut icon" href="favicon.png">
 
     <link href="//fonts.googleapis.com/css?family=Raleway:400,100,300,500,800" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css.css">
-  </head>
-  <body id="top">
+    <style>
 
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0px; padding: 0px;
+  background: #f9f7f6;
+  color: #404d5b;
+  font-weight: 300;
+  font-size: 1em;
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+a {
+  color: #404d5b;
+  text-decoration: none;
+  outline: none;
+}
+
+section {
+  padding: 6em 2em;
+}
+
+section p {
+  font-size: 3em;
+  line-height: 1.518;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  padding: 5em 2em;
+  letter-spacing: -1px;
+}
+
+.header h1 {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-weight: 800;
+  font-size: 5em;
+  line-height: 1;
+}
+
+.header h1 span {
+  display: block;
+  font-size: 50%;
+  font-weight: 400;
+  padding-top: 0.325em;
+  color: #c3c8cd;
+}
+
+@media screen and (max-width: 50em) {
+  section {
+    font-size: 50%;
+    padding: 6em 6.6em;
+  }
+}
+
+section a {
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  color: #404d5b;
+  vertical-align: bottom;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Fade in background */
+.about {
+  background: rgba(149,165,166,0.1);
+}
+
+.about a {
+  font-weight: 500;
+}
+
+.about a:hover,
+.about a:focus {
+  border-color: rgba(52,73,94,0);
+  background-color: rgba(52,73,94,0.1);
+}
+
+/* DEEP MAP */
+.deep-map {
+  background: #f9f9f9;
+  color: #34495e;
+}
+
+/* WINDOW PODS */
+.window-pods { background: rgba(149,165,166,0.3); }
+
+/* KAHASI */
+.kahasi {
+  background: #e74c3c;
+  color: #fff;
+}
+
+/* UP BRAIN TRAINER */
+.up-brain-trainer {
+  background: #34495e;
+  color: #b4b4b4;
+}
+.up-brain-trainer a {
+  color: #e74c3c;
+}
+
+/* APP ENGINE CMS */
+.app-engine-cms {
+  background: rgba(149,165,166,0.5);
+}
+.app-engine-cms a {
+  color: #293b4c;
+  font-weight: 500;
+}
+.app-engine-cms a:hover,
+.app-engine-cms a:focus {
+  color: #f3f3f3;
+}
+
+/* SOCIAL */
+.social { display: flex; justify-content: space-around;}
+.social a { width: 3em; overflow: visible;}
+.social a i { font-size: 3em; line-height: 3em; }
+.social a i { color: lightgray; }
+.social a:hover i { color: darkgray; }
+
+
+/* CONTACT */
+.contact { background: rgba(149,165,166,0.4); }
+.contact a { font-weight: 500; }
+.contact p { margin-bottom: 40px; }
+
+.contact div {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input, textarea, .send-button {
+  margin: 0px;
+  padding: 20px;
+  font-size: 1em;
+  border-radius: 0px;
+  background: rgba(255,255,255,0.5);
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #cacaca;
+  margin: 0px;
+  color: #404d5b;
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+form {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 50em) {
+  input, textarea, form .send-button {
+     font-size: 100%;
+  }
+}
+
+textarea {
+  height: auto;
+  margin-bottom: 0px;
+}
+input:focus, textarea:focus {
+    outline: none;
+    background: white;
+    border-color: #404d5b;
+}
+
+.send-button {
+  font-weight: 500;
+  color: white;
+  background: #e74c3c;
+  text-align: left;
+  border: none;
+}
+.send-button:hover, .send-button:focus { 
+  background: #35404c; 
+  outline: none; 
+}
+.send-button:active { background: #607388; }
+
+
+    </style>
+  </head>
+  <body>
     <div class="container">
-      <header>
+      <header class="header">
         <h1>BEN SHOPE</h1>
       </header>
       <section class="about">
-        <p>I'm Ben and this is my website; a place to publish things that I am involved with or interested in. These days that is mostly software - but I still find time for snowboarding, gardening, reading, writing, and art. If you have anything to say, <a href="#contact">get in touch.</a></p>
+        <p>
+          Hello, I'm Ben and this is my website; a place to publish things that I am involved with or interested in. These days that is mostly software - but I still find time for snowboarding, gardening, reading, writing, and art. A lot of my recent work involves data visualization.  If you have anything to say, feel free to <a href="#contact">get in touch.</a>
+        </p>
       </section>
-      <div class="grid-image wide" style="background-image: url(../img/wp.png);"></div>
-      <section class="link-border">
-        <p>I recently designed <a href="//windowpods.org">Window Pods</a>, a cool indoor gardening product.  Window Pods are flower pots that attach to your window - saving space and increasing sunlight to plants. They finished on KickStarter and are moving to retail.</p>
+      <section class="deep-map" id="deep-map">
+        <p><a href="//deepmap.us">Deep Map</a> is a webapp that allows people to blend map layers in their browser like they would blend image layers in Adobe Photoshop.  This app invites users to explore geographic data and research questions like "Where should I buy a house?" or "Where should I go out tonight?"  I am currently working on adding more features and maps.</p>
       </section>
-      <section class="link-scaleup">
-          <p>I'm building <a href="//github.com/benshope/App-Engine-CMS">App Engine CMS</a> because I want a better way to make websites. Not PHP-based like Wordpress, not limited like Tumblr, and not closed-source like Squarespace. This project is under construction and available on Github.</p>
+      <section class="window-pods">
+        <p>I recently designed <a href="//windowpods.org">Window Pods</a>, a beautiful indoor gardening product.  Window Pods are flower pots that attach to your window - saving space and increasing sunlight to plants. They finished on <a href="//www.kickstarter.com/projects/benshope/window-pods-the-perfect-indoor-garden">KickStarter</a> and are moving to retail.</p>
       </section>
-      <div class="grid-image wide" style="background-image: url(../img/bm.png);"></div>
-      <section class="link-slideright">
-          <p><a href="//bangmaps.com">Deep Map</a> is a nifty app that helps people research questions like "Where should I buy a house?" or "Where should I go out tonight?"  I'm working on more features and maps.</p>
+      <section class="up-brain-trainer">
+        <p><a href="//upbraintrainer.com">UP Brain Trainer</a> is a cross-platform app that I wrote with Angular and Cordova. My goal was to create a friendly space to perform <a href="//en.wikipedia.org/wiki/N-back">N-Back brain training</a> without the pattern-recognition games prevalent in mainstream brain-training apps.</p>
       </section>
-      <section class="link-scaleupbounce">
-        <p><a href="//kahasi.com">Kahasi</a> is an artificial life simulation that I wrote with Python and OpenCL. The simulation is designed to run at scale - to efficiently use as much hardware as you could possibly throw at it.</p>
+      <section class="kahasi">
+        <p><a href="//kahasi.com" disabled>Kahasi</a> is an <a href="//en.wikipedia.org/?title=Artificial_life">artificial life</a> simulation that I am writing with Python and OpenCL. The simulation is designed to run at scale - to efficiently use as much hardware as you could possibly throw at it.</p>
       </section>
-      <section class="link-arrow">
-        <p><a href="//upbraintrainer.com">UP Brain Trainer</a> is a cross-platform app that I wrote with Angular and Cordova. My goal was to create a friendly space to perform N-Back brain training without the pattern-recognition games prevalent in mainstream brain-training apps.</p>
-      </section>
-      <section id="contact" class="link-svgmarker contact dark">
-        <p><!-- Feel free to contact me - I have been known to answer emails.  -->You can reach me by sending a message to <a href="#">ben@benshope.com</a> or by using the form below.</p>
-        <div class="col-sm-6">
-          <form id="contact-form">
-            <input class="input-block-level" type="text" name="name" placeholder="NAME" required />
-            <input class="input-block-level" type="email" name="email" placeholder="EMAIL" required />
-            <textarea class="input-block-level" name="message" placeholder="MESSAGE" rows="5" required ></textarea>
-            <button type="submit" class="send-button">SEND</button>
-          </form>
-        </div>
+      <section class="app-engine-cms">
+        <p>I'm building <a href="//github.com/benshope/App-Engine-CMS">App Engine CMS</a>, an open-source alternative to SquareSpace.  It is a Google App Engine boilerplate with a WYSIWYG editor based on html5 contenteditable.  This project is under construction.</p>
       </section>
       <section class="social">
-        <div class="flex wrap_3 center">
           <a href="//stackoverflow.com/users/1865305"><i class="fa fa-stack-overflow"></i></a>
           <a href="//facebook.com/ben.shope"><i class="fa fa-facebook"></i></a>
           <a href="//twitter.com/benshope"><i class="fa fa-twitter"></i></a>
@@ -57,13 +236,23 @@
           <a href="//github.com/benshope"><i class="fa fa-github-alt"></i></a>
           <a href="//linkedin.com/in/benshope"><i class="fa fa-linkedin"></i></a>
           <a href="//plus.google.com/+BenShope"><i class="fa fa-google-plus"></i></a>
-          <a href="//pinterest.com/ben_shope/"><i class="fa fa-pinterest"></i></a>
           <a href="//instagram.com/ben_shope"><i class="fa fa-instagram"></i></a>
-        </div>
       </section>
-    </div>
+      <section class="contact" id="contact">
+        <p>
+          Feel free to contact me. I can be reached by sending a message to <a href="#">ben@benshope.com</a> or by using the form below.
+          <div class="col-sm-6">
+            <form id="contact-form">
+              <input class="input-block-level" type="text" name="name" placeholder="Name" required />
+              <input class="input-block-level" type="email" name="email" placeholder="Email" required />
+              <textarea class="input-block-level" name="message" placeholder="Message" rows="5" required ></textarea>
+              <button type="submit" class="send-button">SEND</button>
+            </form>
+          </div>
+        </p>
+      </section>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
         $('#contact-form').submit(function(){
