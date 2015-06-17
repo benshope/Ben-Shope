@@ -97,12 +97,12 @@ section a {
 
 /* DEEP MAP */
 .deep-map {
-  background: #f9f9f9;
+  background: rgba(149,165,166,0.2);
   color: #34495e;
 }
 
 /* WINDOW PODS */
-.window-pods { background: rgba(149,165,166,0.3); }
+.window-pods { background: #f9f9f9; }
 
 /* KAHASI */
 .kahasi {
@@ -133,19 +133,21 @@ section a {
 }
 
 /* SOCIAL */
-.social { display: flex; justify-content: space-around;}
+.social div { 
+  display: flex; 
+  justify-content: space-around;
+}
 .social a { width: 3em; overflow: visible;}
 .social a i { font-size: 3em; line-height: 3em; }
 .social a i { color: lightgray; }
 .social a:hover i { color: darkgray; }
-
 
 /* CONTACT */
 .contact { background: rgba(149,165,166,0.4); }
 .contact a { font-weight: 500; }
 .contact p { margin-bottom: 40px; }
 
-.contact div {
+.contact div, .social div {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -213,8 +215,20 @@ input:focus, textarea:focus {
           Hello, I'm Ben and this is my website; a place to publish things that I am involved with or interested in. These days that is mostly software - but I still find time for snowboarding, gardening, reading, writing, and art. A lot of my recent work involves data visualization.  If you have anything to say, feel free to <a href="#contact">get in touch.</a>
         </p>
       </section>
+      <section class="social">
+        <div>
+          <a href="//stackoverflow.com/users/1865305"><i class="fa fa-stack-overflow"></i></a>
+          <a href="//facebook.com/ben.shope"><i class="fa fa-facebook"></i></a>
+          <a href="//twitter.com/benshope"><i class="fa fa-twitter"></i></a>
+          <a href="//youtube.com/user/bfshope"><i class="fa fa-youtube"></i></a>
+          <a href="//github.com/benshope"><i class="fa fa-github-alt"></i></a>
+          <a href="//linkedin.com/in/benshope"><i class="fa fa-linkedin"></i></a>
+          <a href="//plus.google.com/+BenShope"><i class="fa fa-google-plus"></i></a>
+          <a href="//instagram.com/ben_shope"><i class="fa fa-instagram"></i></a>
+        </div>
+      </section>
       <section class="deep-map" id="deep-map">
-        <p><a href="//deepmap.us">Deep Map</a> is a webapp that allows people to blend map layers in their browser like they would blend image layers in Adobe Photoshop.  This app invites users to explore geographic data and research questions like "Where should I buy a house?" or "Where should I go out tonight?"  I am currently working on adding more features and maps.</p>
+        <p><a href="//deepmap.us">Deep Map</a> is an app I made that allows people to blend map layers in their browser like they would blend image layers in Adobe Photoshop.  This app invites users to explore geographic data to research questions like "Where should I buy a house?" or "Where should I go out tonight?"  I am currently working on adding more features and maps.</p>
       </section>
       <section class="window-pods">
         <p>I recently designed <a href="//windowpods.org">Window Pods</a>, a beautiful indoor gardening product.  Window Pods are flower pots that attach to your window - saving space and increasing sunlight to plants. They finished on <a href="//www.kickstarter.com/projects/benshope/window-pods-the-perfect-indoor-garden">KickStarter</a> and are moving to retail.</p>
@@ -228,15 +242,8 @@ input:focus, textarea:focus {
       <section class="app-engine-cms">
         <p>I'm building <a href="//github.com/benshope/App-Engine-CMS">App Engine CMS</a>, an open-source alternative to SquareSpace.  It is a Google App Engine boilerplate with a WYSIWYG editor based on html5 contenteditable.  This project is under construction.</p>
       </section>
-      <section class="social">
-          <a href="//stackoverflow.com/users/1865305"><i class="fa fa-stack-overflow"></i></a>
-          <a href="//facebook.com/ben.shope"><i class="fa fa-facebook"></i></a>
-          <a href="//twitter.com/benshope"><i class="fa fa-twitter"></i></a>
-          <a href="//youtube.com/user/bfshope"><i class="fa fa-youtube"></i></a>
-          <a href="//github.com/benshope"><i class="fa fa-github-alt"></i></a>
-          <a href="//linkedin.com/in/benshope"><i class="fa fa-linkedin"></i></a>
-          <a href="//plus.google.com/+BenShope"><i class="fa fa-google-plus"></i></a>
-          <a href="//instagram.com/ben_shope"><i class="fa fa-instagram"></i></a>
+      <section class="zendata">
+        <p>My newest project is <a href="//zendata.biz">ZenData</a>, a tool for intuitive, visual exploration of small datasets.  This tool will initially visualize things like a single person's Gmail, Github, or FitBit data - allowing users to answer questions like "Do I send more emails on days when I exercise more?".</p>
       </section>
       <section class="contact" id="contact">
         <p>
