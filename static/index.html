@@ -96,7 +96,7 @@ section a {
 }
 
 /* DEEP MAP */
-.deep-map {
+.layers {
   background: rgba(149,165,166,0.2);
   color: #34495e;
 }
@@ -120,21 +120,21 @@ section a {
 }
 
 /* APP ENGINE CMS */
-.thyme {
+.coffeeiq {
   background: rgba(149,165,166,0.5);
 }
-.thyme a {
+.coffeeiq a {
   color: #293b4c;
   font-weight: 500;
 }
-.thyme a:hover,
-.thyme a:focus {
+.coffeeiq a:hover,
+.coffeeiq a:focus {
   color: #f3f3f3;
 }
 
 /* SOCIAL */
-.social div { 
-  display: flex; 
+.social div {
+  display: flex;
   justify-content: space-around;
 }
 .social a { width: 3em; overflow: visible;}
@@ -196,9 +196,9 @@ input:focus, textarea:focus {
   text-align: left;
   border: none;
 }
-.send-button:hover, .send-button:focus { 
-  background: #35404c; 
-  outline: none; 
+.send-button:hover, .send-button:focus {
+  background: #35404c;
+  outline: none;
 }
 .send-button:active { background: #607388; }
 
@@ -212,7 +212,7 @@ input:focus, textarea:focus {
       </header>
       <section class="about">
         <p>
-          Hello, I'm Ben and this is my website; a place to publish things that I am involved with or interested in. These days that is mostly software - but I still find time for snowboarding, gardening, reading, writing, and art. A lot of my recent work involves data visualization.  If you have anything to say, feel free to <a href="#contact">get in touch.</a>
+          Hello, I'm Ben and this is my website; a place to publish things that I am involved with or interested in.  If you have anything to say, feel free to <a href="#contact">get in touch.</a>
         </p>
       </section>
       <section class="social">
@@ -227,21 +227,21 @@ input:focus, textarea:focus {
           <a href="//instagram.com/ben_shope"><i class="fa fa-instagram"></i></a>
         </div>
       </section>
-      <section class="deep-map" id="deep-map">
-        <p><a href="//deepmap.us">Layers</a> is an app I made that allows people to overlay maps in their browser and blend them like image layers in Photoshop.  This app enables users to explore geographic data to research questions like "Where should I buy a house?" or "Where should I go out tonight?"  I am currently working on adding more features and maps.</p>
+      <section class="coffeeiq">
+        <p>My newest project is <a href="//coffeeiq.org">CoffeeIQ</a>, an app that schedules random coffee meetings at work.  The idea is that meeting new coworkers help users build a network, strengthens company culture, and promotes knowledge sharing.</p>
       </section>
       <section class="window-pods">
         <p>I recently designed <a href="//windowpods.org">Window Pods</a>, a beautiful indoor gardening product.  Window Pods are flower pots that attach to your window - saving space and increasing sunlight to plants. They finished on <a href="//www.kickstarter.com/projects/benshope/window-pods-the-perfect-indoor-garden">KickStarter</a> and are moving to retail.</p>
       </section>
+      <section class="layers" id="layers">
+        <p><a href="//layerrs.com">Layers</a> is an app I made that allows people to overlay maps in their browser and blend them like image layers in Photoshop.  With more data, I could see this enabling users to research questions like "Where should I buy a house?" or "Where should I go out tonight?"</p>
+      </section>
       <section class="focus">
         <p><a href="//f0cu5.com">Focus</a> is a cross-platform app that I wrote with Angular and Cordova. My goal was to create a friendly space to perform <a href="//en.wikipedia.org/wiki/N-back">N-Back brain training</a> without the pattern-recognition games prevalent in mainstream brain-training apps.</p>
       </section>
-      <section class="thyme">
-        <p>My newest project is <a href="//thyyme.com">Thyme</a>, a quantified-self app. Thyme visualizes health, fitness, and work data - helping users to allocate their time better, work smarter, and focus on the things that matter to them.</p>
-      </section>
       <section class="contact" id="contact">
         <p>
-          Feel free to contact me. I can be reached by sending a message to <a href="#">ben@benshope.com</a> or by using the form below.
+          I can be reached by sending a message to <a href="#">ben@benshope.com</a> or by using the form below.
           <div class="col-sm-6">
             <form id="contact-form">
               <input class="input-block-level" type="text" name="name" placeholder="Name" required />
