@@ -2,6 +2,10 @@ machine:
   node:
     version: 8.1
 
+test:
+  override:
+    - "true"
+
 deployment:
   production:
     branch: master
