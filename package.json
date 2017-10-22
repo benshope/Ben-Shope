@@ -17,7 +17,9 @@
     "node": ">=8.1.4"
   },
   "scripts": {},
-  "dependencies": {},
+  "dependencies": {
+    "firebase": "^4.1.3"
+  },
   "devDependencies": {
     "firebase-tools": "^3.9.1"
   }
