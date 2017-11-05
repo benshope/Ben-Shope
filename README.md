@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/benshope/ben_shope.svg?style=svg)](https://circleci.com/gh/benshope/ben_shope)
+[![CircleCI](https://circleci.com/gh/benshope/ben_shope.svg?style=shield&circle-token)](https://circleci.com/gh/benshope/ben_shope)
 
 # My Website
 
