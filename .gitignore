@@ -10,9 +10,6 @@ node_modules/
 yarn.lock
 package-lock.json
 .package-lock.json
-.idea/
-.project
-*.iml
 
 #======================================
 # OS generated
