@@ -3,228 +3,113 @@
     <title>Ben Shope</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <meta name="description" content="Now is better than never.  Simple is better than complex.  Readability counts.">
+    <meta name="description" content="Software engineer, industrial designer, baker, runner, and matcha enthusiast">
     <meta name="author" content="Ben Shope">
-    <link rel="shortcut icon" href="favicon.png">
-
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,100,300,500,800" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600" rel="stylesheet" type="text/css" />
     <style>
 
-* { box-sizing: border-box; }
+:root {
+  --white: hsl(200, 25%, 100%);
+  --black: hsl(100, 25%, 0%);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+  --white: hsl(200, 25%, 0%);
+  --black: hsl(100, 25%, 100%);
+  }
+}
 
-html, body {
-  margin: 0px; padding: 0px;
-  background: #f9f7f6;
-  color: #404d5b;
-  font-weight: 300;
-  font-size: 1em;
+html {
+  box-sizing: border-box;
+  font-size: 2vw;
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
+  background: var(--white);
+  color: var(--black);
+}
+
+ul, ol {
+  list-style: none;
 }
 
 a {
-  color: #404d5b;
   text-decoration: none;
-  outline: none;
+  color: var(--black);
 }
 
-section {
-  padding: 6em 2em;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-section p {
-  font-size: 3em;
-  line-height: 1.518;
-  max-width: 1200px;
-  margin: 0 auto;
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
 
-/* Header */
-.header {
-  padding: 5em 2em;
-  letter-spacing: -1px;
-}
-
-.header h1 {
-  /*text-align: center;*/
-  max-width: 1200px;
-  margin: 0 auto;
-  font-weight: 800;
-  font-size: 5em;
-  line-height: 1;
-}
-
-.header h1 span {
-  display: block;
-  font-size: 50%;
+h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
-  padding-top: 0.325em;
-  color: #c3c8cd;
+  text-transform: uppercase;
 }
 
-@media screen and (max-width: 50em) {
-  section {
-    font-size: 50%;
-    padding: 6em 6.6em;
-  }
+h1 {
+  font-size: 8vw;
+  line-height: 1em;
 }
 
-section a {
-  font-weight: 500;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  color: #404d5b;
-  vertical-align: bottom;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-/* Fade in background */
-.about {
-  background: rgba(149,165,166,0.1);
-}
-
-.about a {
-  font-weight: 500;
-}
-
-.about a:hover,
-.about a:focus {
-  border-color: rgba(52,73,94,0);
-  background-color: rgba(52,73,94,0.1);
-}
-
-/* DEEP MAP */
-.layers {
-  background: rgba(149,165,166,0.2);
-  color: #34495e;
-}
-
-/* WINDOW PODS */
-.window-pods { background: #f9f9f9; }
-
-/* KAHASI */
-.kahasi {
-  background: #e74c3c;
-  color: #fff;
-}
-
-/* FOCUS */
-.focus {
-  background: #34495e;
-  color: #b4b4b4;
-}
-.focus a {
-  color: #e74c3c;
-}
-
-/* APP ENGINE CMS */
-.coffeeiq {
-  background: rgba(149,165,166,0.5);
-}
-.coffeeiq a {
-  color: #293b4c;
-  font-weight: 500;
-}
-.coffeeiq a:hover,
-.coffeeiq a:focus {
-  color: #f3f3f3;
-}
-
-/* SOCIAL */
-.social div, .footer div {
+.social-links {
+  margin-top: 8vw;
   display: flex;
-  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.social a {
-  width: 3em;
-  overflow: visible;
+.social-links a {
+  line-height: 3em;
+  display: flex;
+  align-items: center;
 }
-.social a i { font-size: 3em; line-height: 3em; }
-.footer a i, .social a i { opacity: 0.8; }
-.footer a:hover i, .social a:hover i { opacity: 1; }
-
-input, textarea, .send-button {
-  margin: 0px;
-  padding: 20px;
-  font-size: 1em;
-  border-radius: 0px;
-  background: rgba(255,255,255,0.5);
-  width: 100%;
-  border: 0;
-  border-bottom: 2px solid #cacaca;
-  margin: 0px;
-  color: #404d5b;
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 300;
+.social-links a:hover {
+  font-weight: 600;
+}
+.social-links img {
+  width: 1.5em;
+  margin-right: 1em;
 }
 
-form {
-  font-size: 3em;
-  font-weight: 500;
+.social-links .facebook {
+  fill: #4267B2;
 }
 
-@media screen and (max-width: 50em) {
-  input, textarea, form .send-button {
-     font-size: 100%;
-  }
+.page {
+  width: 80vw;
+  left: 10vw;
+  padding-top: 8vw;
+  height: 100vh;
+  position: relative;
 }
-
-textarea {
-  height: auto;
-  margin-bottom: 0px;
-}
-input:focus, textarea:focus {
-    outline: none;
-    background: white;
-    border-color: #404d5b;
-}
-
-.send-button {
-  font-weight: 500;
-  color: white;
-  background: #e74c3c;
-  text-align: left;
-  border: none;
-}
-.send-button:hover, .send-button:focus {
-  background: #35404c;
-  outline: none;
-}
-.send-button:active { background: #607388; }
-.footer {
-  color: white;
-  background: #e74c3c;
-  padding: 4rem 2rem;
-  font-size: 2rem;
-}
-.footer a i {
-  color: white;
-}
-
     </style>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <h1>BEN SHOPE</h1>
-      </header>
-      <section class="about">
+    <div class="page">
+      <h1>Ben Shope</h1>
+      <!-- <h3>Software engineer<h3> -->
+      <ul class="social-links">
+        <a href="https://facebook.com/ben.shope"><img class="facebook" src="svg/facebook.svg"></img>facebook</a>
+        <a href="https://twitter.com/benshope"><img class="twitter" src="svg/twitter.svg"></img>twitter</a>
+        <a href="https://youtube.com/user/bfshope"><img class="youtube" src="svg/youtube.svg" ></img>youtube</a>
+        <a href="https://github.com/benshope"><img class="github" src="svg/github.svg" ></img>github</a>
+        <a href="https://linkedin.com/in/benshope"><img class="linkedin" src="svg/linkedin.svg" ></img>linkedin</a>
+        <a href="https://instagram.com/ben_shope"><img class="instagram" src="svg/instagram.svg"></img>instagram</a>
+      </ul>
+    </div>
+<!--       <section class="about">
         <p>
           Hello, I'm Ben and this is my website; a place to publish things that I am involved with or interested in.  If you have anything to say, <a href="mailto:ben@benshope.com">get in touch</a>.
         </p>
       </section>
       <section class="social">
-        <div>
-          <a href="//facebook.com/ben.shope"><i class="fa fa-facebook"></i></a>
-          <a href="//twitter.com/benshope"><i class="fa fa-twitter"></i></a>
-          <!-- <a href="//youtube.com/user/bfshope"><i class="fa fa-youtube"></i></a> -->
-          <a href="//github.com/benshope"><i class="fa fa-github-alt"></i></a>
-          <a href="//linkedin.com/in/benshope"><i class="fa fa-linkedin"></i></a>
-          <a href="//plus.google.com/+BenShope"><i class="fa fa-google-plus"></i></a>
-          <a href="//instagram.com/ben_shope"><i class="fa fa-instagram"></i></a>
-        </div>
       </section>
       <section class="coffeeiq">
         <p>My newest project is <a href="//coffeeiq.org">CoffeeIQ</a>, an app that schedules coffee with a different coworker each week.</p>
@@ -242,20 +127,198 @@ input:focus, textarea:focus {
         <div>
           <a href="//facebook.com/ben.shope"><i class="fa fa-facebook"></i></a>
           <a href="//twitter.com/benshope"><i class="fa fa-twitter"></i></a>
-          <!-- <a href="//youtube.com/user/bfshope"><i class="fa fa-youtube"></i></a> -->
+          <a href="//youtube.com/user/bfshope"><i class="fa fa-youtube"></i></a>
           <a href="//github.com/benshope"><i class="fa fa-github-alt"></i></a>
           <a href="//linkedin.com/in/benshope"><i class="fa fa-linkedin"></i></a>
           <a href="//plus.google.com/+BenShope"><i class="fa fa-google-plus"></i></a>
           <a href="//instagram.com/ben_shope"><i class="fa fa-instagram"></i></a>
         </div>
-      </section>
-    <script type="text/javascript">
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-17852816-3', 'benshope.com');
-      ga('send', 'pageview');
-    </script>
+      </section> -->
+
+<!-- <canvas id="glcanvas"></canvas>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+  attribute vec2 aVertexPosition;
+
+  uniform vec2 uScalingFactor;
+  uniform vec2 uRotationVector;
+
+  void main() {
+    vec2 rotatedPosition = vec2(
+      aVertexPosition.x * uRotationVector.y +
+            aVertexPosition.y * uRotationVector.x,
+      aVertexPosition.y * uRotationVector.y -
+            aVertexPosition.x * uRotationVector.x
+    );
+
+    gl_Position = vec4(rotatedPosition * uScalingFactor, 0.0, 1.0);
+  }
+</script>
+<script id="fragment-shader" type="x-shader/x-fragment">
+  #ifdef GL_ES
+    precision highp float;
+  #endif
+
+  uniform vec4 uGlobalColor;
+
+  void main() {
+    gl_FragColor = uGlobalColor;
+  }
+</script>
+<script type="text/javascript">
+  let gl = null;
+let glCanvas = null;
+
+// Aspect ratio and coordinate system
+// details
+
+let aspectRatio;
+let currentRotation = [0, 1];
+let currentScale = [1.0, 1.0];
+
+// Vertex information
+
+let vertexArray;
+let vertexBuffer;
+let vertexNumComponents;
+let vertexCount;
+
+// Rendering data shared with the
+// scalers.
+
+let uScalingFactor;
+let uGlobalColor;
+let uRotationVector;
+let aVertexPosition;
+
+// Animation timing
+
+let previousTime = 0.0;
+let degreesPerSecond = 90.0;
+window.addEventListener("load", startup, false);
+
+function startup() {
+  glCanvas = document.getElementById("glcanvas");
+  gl = glCanvas.getContext("webgl");
+
+  const shaderSet = [
+    {
+      type: gl.VERTEX_SHADER,
+      id: "vertex-shader"
+    },
+    {
+      type: gl.FRAGMENT_SHADER,
+      id: "fragment-shader"
+    }
+  ];
+
+  shaderProgram = buildShaderProgram(shaderSet);
+
+  aspectRatio = glCanvas.width/glCanvas.height;
+  currentRotation = [0, 1];
+  currentScale = [1.0, aspectRatio];
+
+  vertexArray = new Float32Array([
+      -0.5, 0.5, 0.5, 0.5, 0.5, -0.5,
+      -0.5, 0.5, 0.5, -0.5, -0.5, -0.5
+  ]);
+
+  vertexBuffer = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
+  gl.bufferData(gl.ARRAY_BUFFER, vertexArray, gl.STATIC_DRAW);
+
+  vertexNumComponents = 2;
+  vertexCount = vertexArray.length/vertexNumComponents;
+
+  currentAngle = 0.0;
+  rotationRate = 6;
+
+  animateScene();
+}function buildShaderProgram(shaderInfo) {
+  let program = gl.createProgram();
+
+  shaderInfo.forEach(function(desc) {
+    let shader = compileShader(desc.id, desc.type);
+
+    if (shader) {
+      gl.attachShader(program, shader);
+    }
+  });
+
+  gl.linkProgram(program)
+
+  if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+    console.log("Error linking shader program:");
+    console.log(gl.getProgramInfoLog(program));
+  }
+
+  return program;
+}function compileShader(id, type) {
+  let code = document.getElementById(id).firstChild.nodeValue;
+  let shader = gl.createShader(type);
+
+  gl.shaderSource(shader, code);
+  gl.compileShader(shader);
+
+  if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+    console.log(`Error compiling ${type === gl.VERTEX_SHADER ? "vertex" : "fragment"} shader:`);
+    console.log(gl.getShaderInfoLog(shader));
+  }
+  return shader;
+}function animateScene() {
+  gl.viewport(0, 0, glCanvas.width, glCanvas.height);
+  gl.clearColor(0.8, 0.9, 1.0, 1.0);
+  gl.clear(gl.COLOR_BUFFER_BIT);
+
+  let radians = currentAngle * Math.PI / 180.0;
+  currentRotation[0] = Math.sin(radians);
+  currentRotation[1] = Math.cos(radians);
+
+  gl.useProgram(shaderProgram);
+
+  uScalingFactor =
+      gl.getUniformLocation(shaderProgram, "uScalingFactor");
+  uGlobalColor =
+      gl.getUniformLocation(shaderProgram, "uGlobalColor");
+  uRotationVector =
+      gl.getUniformLocation(shaderProgram, "uRotationVector");
+
+  gl.uniform2fv(uScalingFactor, currentScale);
+  gl.uniform2fv(uRotationVector, currentRotation);
+  gl.uniform4fv(uGlobalColor, [0.1, 0.7, 0.2, 1.0]);
+
+  gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
+
+  aVertexPosition =
+      gl.getAttribLocation(shaderProgram, "aVertexPosition");
+
+  gl.enableVertexAttribArray(aVertexPosition);
+  gl.vertexAttribPointer(aVertexPosition, vertexNumComponents,
+        gl.FLOAT, false, 0, 0);
+
+  gl.drawArrays(gl.TRIANGLES, 0, vertexCount);
+
+  window.requestAnimationFrame(function(currentTime) {
+    let deltaAngle = ((currentTime - previousTime) / 1000.0)
+          * degreesPerSecond;
+
+    currentAngle = (currentAngle + deltaAngle) % 360;
+
+    previousTime = currentTime;
+    animateScene();
+  });
+}
+
+  </script>
+ -->
+
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-17852816-3', 'benshope.com');
+    ga('send', 'pageview');
+  </script>
 </body>
 </html>
