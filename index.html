@@ -8,95 +8,106 @@
   <link rel="shortcut icon" href="favicon.svg">
   <link href="https://fonts.googleapis.com/css?family=Raleway:500,700" rel="stylesheet" type="text/css" />
   <style>
-:root {
-  --white: hsl(200, 25%, 100%);
-  --black: hsl(100, 25%, 0%);
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --white: hsl(200, 25%, 0%);
-    --black: hsl(100, 25%, 100%);
-  }
-}
-html {
-  box-sizing: border-box;
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 500;
-  background: var(--white);
-  color: var(--black);
-}
-body {
-  display: flex;
-  justify-content: center;
-}
-ul, ol {
-  list-style: none;
-}
-a {
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--black);
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-}
-p {
-  margin-bottom: 2em;
-  line-height: 2em;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
-h1 {
-  font-size: 4rem;
-}
-.social-links {
-  margin-bottom: 2em;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.social-links a {
-  line-height: 3rem;
-  display: flex;
-  align-items: center;
-}
-.social-links a:hover {
-  text-decoration: underline;
-}
-.social-links svg {
-  width: 1.5rem;
-  margin-right: 1rem;
-}
-.hero-content {
-  max-width: 40rem;
-  flex: 1;
-  margin: 2rem 4rem;
-}
-iframe {
-  opacity: 0;
-  position: absolute;
-}
+    :root {
+      --backgroundLuminance: 45%;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --backgroundLuminance: 20%;
+      }
+    }
+    html {
+      box-sizing: border-box;
+      font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+      font-weight: 500;
+      color: white;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(-45deg,
+        hsl(14.2, 40%, calc(var(--backgroundLuminance, 40%) + 10%)),
+        hsl(336.8, 40%, var(--backgroundLuminance, 40%)),
+        hsl(195.8, 40%, calc(var(--backgroundLuminance, 40%) + 10%)),
+        hsl(165.8, 40%, var(--backgroundLuminance, 40%)));
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    ul, ol {
+      list-style: none;
+    }
+    a {
+      font-weight: 700;
+      text-decoration: none;
+      color: white;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+      margin: 0;
+      padding: 0;
+    }
+    p {
+      margin-bottom: 2em;
+      line-height: 2em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600;
+      margin-bottom: 0.5em;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 4rem;
+    }
+    .social-links {
+      margin-bottom: 2em;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .social-links a {
+      line-height: 3rem;
+      display: flex;
+      align-items: center;
+    }
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+    .social-links svg {
+      fill: white;
+      width: 1.5rem;
+      margin-right: 1rem;
+    }
+    .hero-content {
+      max-width: 40rem;
+      flex: 1;
+      margin: 2rem 4rem;
+    }
+    iframe {
+      opacity: 0;
+      position: absolute;
+    }
   </style>
 </head>
 <body>
+  <div class="background"></div>
   <div class="hero-content">
     <h1>Ben Shope</h1>
-    <p>Hello, I'm Ben, a software engineer living in San Francisco.  On weekends I'm an amateur industrial designer and indoor gardener.  If you have anything to say, shoot me an email <a href="mailto:ben@benshope.com">ben@benshope.com</a>
+    <p>Hello, I'm Ben, a software engineer based in San Francisco. If you have anything to say, shoot me an email <a href="mailto:ben@benshope.com">ben@benshope.com</a>
       <ul class="social-links" id="social-links">
-        <a href="https://facebook.com/ben.shope" target="__blank"><svg     
-         width="32px" height="32px" viewBox="0 0 32 32"  >
-         <path id="White_2_" d="M30.7,0H1.3C0.6,0,0,0.6,0,1.3v29.3C0,31.4,0.6,32,1.3,32H17V20h-4v-5h4v-4
-         c0-4.1,2.6-6.2,6.3-6.2C25.1,4.8,26.6,5,27,5v4.3l-2.6,0c-2,0-2.5,1-2.5,2.4V15h5l-1,5h-4l0.1,12h8.6c0.7,0,1.3-0.6,1.3-1.3V1.3
-         C32,0.6,31.4,0,30.7,0z"/>
-       </svg></img>facebook</a>
        <a href="https://twitter.com/benshope" target="__blank"><svg 
          width="32px" height="32px" viewBox="0 0 32 32"  >
          <path d="M32,6.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.7,3.8,24,3,22.2,3
@@ -105,13 +116,6 @@ iframe {
          c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1C2.9,27.9,6.4,29,10.1,29c12.1,0,18.7-10,18.7-18.7
          c0-0.3,0-0.6,0-0.8C30,8.5,31.1,7.4,32,6.1z"/>
        </svg>twitter</a>
-       <a href="https://youtube.com/user/bfshope" target="__blank"><svg
-         width="32px" height="32px" viewBox="0 0 32 32"  >
-         <path  d="M31.7,9.6c0,0-0.3-2.2-1.3-3.2c-1.2-1.3-2.6-1.3-3.2-1.4C22.7,4.7,16,4.7,16,4.7h0c0,0-6.7,0-11.2,0.3
-         c-0.6,0.1-2,0.1-3.2,1.4c-1,1-1.3,3.2-1.3,3.2S0,12.2,0,14.8v2.4c0,2.6,0.3,5.2,0.3,5.2s0.3,2.2,1.3,3.2c1.2,1.3,2.8,1.2,3.5,1.4
-         C7.7,27.2,16,27.3,16,27.3s6.7,0,11.2-0.3c0.6-0.1,2-0.1,3.2-1.4c1-1,1.3-3.2,1.3-3.2s0.3-2.6,0.3-5.2v-2.4
-         C32,12.2,31.7,9.6,31.7,9.6z M12.7,20.2l0-9l8.6,4.5L12.7,20.2z"/>
-       </svg>youtube</a>
        <a href="https://github.com/benshope" target="__blank"><svg 
          width="32px" height="32px" viewBox="0 0 32 32"  >
          <path  d="M16,0.4c-8.8,0-16,7.2-16,16c0,7.1,4.6,13.1,10.9,15.2
@@ -121,19 +125,26 @@ iframe {
          c0.9,2.2,0.3,3.8,0.2,4.2c1,1.1,1.6,2.5,1.6,4.3c0,6.1-3.7,7.5-7.3,7.9c0.6,0.5,1.1,1.5,1.1,3c0,2.1,0,3.9,0,4.4
          c0,0.4,0.3,0.9,1.1,0.8C27.4,29.5,32,23.5,32,16.4C32,7.6,24.8,0.4,16,0.4z"/>
        </svg>github</a>
-       <a href="https://linkedin.com/in/benshope" target="__blank"><svg       width="32px" height="32px" viewBox="0 0 32 32"  >
-         <path  d="M30.7,0H1.3C0.6,0,0,0.6,0,1.3v29.3C0,31.4,0.6,32,1.3,32h29.3c0.7,0,1.3-0.6,1.3-1.3V1.3
-         C32,0.6,31.4,0,30.7,0z M9.5,27.3H4.7V12h4.8V27.3z M7.1,9.9c-1.5,0-2.8-1.2-2.8-2.8c0-1.5,1.2-2.8,2.8-2.8c1.5,0,2.8,1.2,2.8,2.8
-         C9.9,8.7,8.6,9.9,7.1,9.9z M27.3,27.3h-4.7v-7.4c0-1.8,0-4-2.5-4c-2.5,0-2.8,1.9-2.8,3.9v7.6h-4.7V12H17v2.1h0.1
-         c0.6-1.2,2.2-2.5,4.5-2.5c4.8,0,5.7,3.2,5.7,7.3V27.3z"/>
-       </svg>linkedin</a>
-       <a href="https://instagram.com/ben_shope" target="__blank"><svg     
+       <a href="https://instagram.com/ben_shope" target="__blank"><svg 
          width="32px" height="32px" viewBox="0 0 32 32"  >
          <path  d="M28.2,0H3.8C1.7,0,0,1.7,0,3.8v24.4C0,30.3,1.7,32,3.8,32h24.4c2.1,0,3.8-1.7,3.8-3.8V3.8
          C32,1.7,30.3,0,28.2,0z M24,4h3c0.6,0,1,0.4,1,1v3c0,0.6-0.4,1-1,1h-3c-0.6,0-1-0.4-1-1V5C23,4.4,23.4,4,24,4z M16,9.9
          c3.4,0,6.2,2.7,6.2,6.1c0,3.4-2.8,6.1-6.2,6.1c-3.4,0-6.2-2.7-6.2-6.1C9.9,12.6,12.6,9.9,16,9.9z M28,29H4c-0.6,0-1-0.4-1-1V13h4
          c-0.5,0.8-0.7,2.1-0.7,3c0,5.4,4.4,9.7,9.7,9.7c5.4,0,9.7-4.4,9.7-9.7c0-0.9-0.1-2.3-0.8-3h4v15C29,28.6,28.6,29,28,29z"/>
        </svg>instagram</a>
+       <a href="https://linkedin.com/in/benshope" target="__blank"><svg       width="32px" height="32px" viewBox="0 0 32 32"  >
+         <path  d="M30.7,0H1.3C0.6,0,0,0.6,0,1.3v29.3C0,31.4,0.6,32,1.3,32h29.3c0.7,0,1.3-0.6,1.3-1.3V1.3
+         C32,0.6,31.4,0,30.7,0z M9.5,27.3H4.7V12h4.8V27.3z M7.1,9.9c-1.5,0-2.8-1.2-2.8-2.8c0-1.5,1.2-2.8,2.8-2.8c1.5,0,2.8,1.2,2.8,2.8
+         C9.9,8.7,8.6,9.9,7.1,9.9z M27.3,27.3h-4.7v-7.4c0-1.8,0-4-2.5-4c-2.5,0-2.8,1.9-2.8,3.9v7.6h-4.7V12H17v2.1h0.1
+         c0.6-1.2,2.2-2.5,4.5-2.5c4.8,0,5.7,3.2,5.7,7.3V27.3z"/>
+       </svg>linkedin</a>
+       <a href="https://medium.com/@benshope" target="__blank"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"/></svg>medium</a>
+       <a href="https://facebook.com/ben.shope" target="__blank"><svg 
+         width="32px" height="32px" viewBox="0 0 32 32"  >
+         <path id="White_2_" d="M30.7,0H1.3C0.6,0,0,0.6,0,1.3v29.3C0,31.4,0.6,32,1.3,32H17V20h-4v-5h4v-4
+         c0-4.1,2.6-6.2,6.3-6.2C25.1,4.8,26.6,5,27,5v4.3l-2.6,0c-2,0-2.5,1-2.5,2.4V15h5l-1,5h-4l0.1,12h8.6c0.7,0,1.3-0.6,1.3-1.3V1.3
+         C32,0.6,31.4,0,30.7,0z"/>
+       </svg></img>facebook</a>
        <a href="https://vimeo.com/benshope" target="__blank"><svg   
          width="32px" height="32px" viewBox="0 0 32 32"  >
          <path  d="M32,8.6c-0.1,3.1-2.3,7.4-6.5,12.8c-4.4,5.7-8,8.5-11,8.5c-1.9,0-3.4-1.7-4.7-5.2c-0.9-3.2-1.7-6.3-2.6-9.5
@@ -141,35 +152,41 @@ iframe {
          c0.6,3.9,1.1,6.4,1.3,7.3c0.7,3.3,1.5,4.9,2.4,4.9c0.7,0,1.7-1.1,3-3.2c1.3-2.1,2.1-3.7,2.2-4.8c0.2-1.8-0.5-2.7-2.2-2.7
          c-0.8,0-1.6,0.2-2.4,0.5c1.6-5.2,4.6-7.7,9-7.5C30.6,2.3,32.2,4.4,32,8.6z"/>
        </svg>vimeo</a>
-       <a href="https://medium.com/@benshope" target="__blank"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"/></svg>medium</a>
+       <a href="https://youtube.com/user/bfshope" target="__blank"><svg
+         width="32px" height="32px" viewBox="0 0 32 32"  >
+         <path  d="M31.7,9.6c0,0-0.3-2.2-1.3-3.2c-1.2-1.3-2.6-1.3-3.2-1.4C22.7,4.7,16,4.7,16,4.7h0c0,0-6.7,0-11.2,0.3
+         c-0.6,0.1-2,0.1-3.2,1.4c-1,1-1.3,3.2-1.3,3.2S0,12.2,0,14.8v2.4c0,2.6,0.3,5.2,0.3,5.2s0.3,2.2,1.3,3.2c1.2,1.3,2.8,1.2,3.5,1.4
+         C7.7,27.2,16,27.3,16,27.3s6.7,0,11.2-0.3c0.6-0.1,2-0.1,3.2-1.4c1-1,1.3-3.2,1.3-3.2s0.3-2.6,0.3-5.2v-2.4
+         C32,12.2,31.7,9.6,31.7,9.6z M12.7,20.2l0-9l8.6,4.5L12.7,20.2z"/>
+       </svg>youtube</a>
      </ul>
    </div>
-<iframe width="1" height="1" src="https://angel.co/u/ben-shope"></iframe>
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '554958358780977');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=554958358780977&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-17852816-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+   <iframe width="1" height="1" src="https://angel.co/u/ben-shope"></iframe>
+   <!-- Facebook Pixel Code -->
+   <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '554958358780977');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=554958358780977&ev=PageView&noscript=1"
+      /></noscript>
+      <!-- End Facebook Pixel Code -->
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17852816-3"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'UA-17852816-3');
-</script>
-</body>
-</html>
+        gtag('config', 'UA-17852816-3');
+      </script>
+    </body>
+    </html>
